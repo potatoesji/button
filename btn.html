@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>btn</title>
+	<link rel="stylesheet" type="text/css" href="font-face.css">
+	<link rel="stylesheet" type="text/css" href="btn.css">
+	<!-- <script src="monder.js"></script> -->
+	<style type="text/css" media="screen">
+		.box button{
+			width: 100px;height: 50px;border-radius: 25px;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"> 
+		<!-- 说明： btn-？ class 给a标签添加  a标签中的span标签不能省略 -->
+		<a href="#" class="btn-0">0</a>
+		<a href="#" class="btn-1">1</a>
+		<a href="#" class="btn-1-2">1-2</a>
+		<a href="#" class="btn-2">2</a>
+		<a href="#" class="btn-3"><span>3</span></a>
+		<a href="#" class="btn-4"><span>4</span></a>  
+		<a href="#" class="btn-5">5</a>	
+		<a href="#" class="btn-6">6<span></span></a>
+		<a href="#" class="btn-7"><span>7</span></a>
+		<a href="#" class="btn-8">8</a>
+		<a href="#" class="btn-9"><span>9</span></a>
+		<a href="#" class="btn-10"><span>10</span></a>	
+		<a href="#" class="btn-11">11</a>
+	</div>
+	<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+		    $('.btn-6').on('mouseenter', function (e) {
+		        var parentOffset = $(this).offset(), relX = e.pageX - parentOffset.left, relY = e.pageY - parentOffset.top;
+		        $(this).find('span').css({
+		            top: relY,
+		            left: relX
+		        });
+		    }).on('mouseout', function (e) {
+		        var parentOffset = $(this).offset(), relX = e.pageX - parentOffset.left, relY = e.pageY - parentOffset.top;
+		        $(this).find('span').css({
+		            top: relY,
+		            left: relX
+		        });
+		    });
+		    $('[href=#]').click(function () {
+		        return false;
+		    });
+		});
+	</script>
+
+</body>
+</html>
