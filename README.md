@@ -6,12 +6,12 @@ button css
 
 页面引入font-face.css btn.css 
 
-*<link rel="stylesheet" type="text/css" href="font-face.css">
-*<link rel="stylesheet" type="text/css" href="btn.css">
+*\<link rel="stylesheet" type="text/css" href="font-face.css"\>
+*\<link rel="stylesheet" type="text/css" href="btn.css"\>
 
 给a标签添加 btn- 0~11 的class
 
-*<a href="javascript:;" class="btn-0">0</a>
+*\<a href="javascript:;" class="btn-0"\>0\<\/a\>
 
 a标签中的span标签不能省略 如：
 
