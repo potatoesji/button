@@ -49,8 +49,7 @@ button css
 如果你想使一段话中部分文字高亮显示，来起到突出强调的作用，那么可以把它用 `  ` 包围起来
 
 ##文字超链接##
-		给一段文字加入超链接的格式是这样的 [ 要显示的文字 ]( 链接的地址 )。比如：
-		`[我的git地址](https://github.com/potatoesji)`
+		给一段文字加入超链接的格式是这样的 [ 我的git地址 ]( https://github.com/potatoesji )。
 
 ##鼠标悬停显示的文本##
 		`[我的git地址](https://github.com/potatoesji "土豆碰上冰")`
